@@ -4,27 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MYWEBPORTOFOLIO</title>
+  <title href="/public/img/logo.png">MYWEBPORTOFOLIO</title>
   <link rel="stylesheet" href="/public/output.css">
 </head>
 
 <body>
   <!-- Header -->
-  <header class="bg-transparent absolute top-0 left-0 flex items-center z-10">
+  <header class="bg-transparent absolute top-0 left-0 flex w-full items-center z-10">
     <div class="container">
-      <!-- Navbar -->
       <div class="flex items-center justify-between relative">
         <!-- Logo -->
         <div class="px-4">
           <a href="#home" class="py-6 block"><img src="/public/img/logo.png" alt="" width="70"></a>
         </div>
+        <!-- Logo End -->
+        <!-- Hamburger -->
         <div class="flex items-center px-4">
-          <button id="humberger" name="humberger" type="button" class="block absolute right-4">
-            <span class="hamburger-menu"></span>
-            <span class="hamburger-menu"></span>
-            <span class="hamburger-menu"></span>
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-5">
+            <span class="hamburger-menu transition duration-300 ease-out origin-top-left"></span>
+            <span class="hamburger-menu transition duration-300 ease-out"></span>
+            <span class="hamburger-menu transition duration-300 ease-out origin-bottom-left"></span>
           </button>
         </div>
+        <!-- Hamburger End -->
       </div>
     </div>
   </header>
@@ -102,6 +104,8 @@
     </div>
   </section>
   <!-- About Section End -->
+
+  <script src="/public/script.js"></script>
 </body>
 
 </html>

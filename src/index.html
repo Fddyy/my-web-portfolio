@@ -10,7 +10,7 @@
 
 <body>
   <!-- Header -->
-  <header class="bg-transparent absolute top-0 left-0 flex w-full items-center z-10">
+  <header class="bg-transparent fixed bg-white opacity-75 navblur top-0 left-0 flex w-full items-center z-10">
     <div class="container">
       <div class="flex items-center justify-between relative">
         <!-- Logo -->
@@ -20,11 +20,31 @@
         <!-- Logo End -->
         <!-- Hamburger -->
         <div class="flex items-center px-4">
-          <button id="hamburger" name="hamburger" type="button" class="block absolute right-5">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-5 lg:hidden">
             <span class="hamburger-menu transition duration-300 ease-out origin-top-left"></span>
             <span class="hamburger-menu transition duration-300 ease-out"></span>
             <span class="hamburger-menu transition duration-300 ease-out origin-bottom-left"></span>
           </button>
+
+          <nav id="nav-menu"
+            class="hidden absolute py-5 bg-slate-300 shadow-lg rounded-lg max-w-[250px] w-full right-5 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home" class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="#home" class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Tentang
+                  Saya</a>
+              </li>
+              <li class="group">
+                <a href="#home"
+                  class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Portofolio</a>
+              </li>
+              <li class="group">
+                <a href="#home" class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <!-- Hamburger End -->
       </div>

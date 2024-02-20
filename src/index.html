@@ -41,7 +41,11 @@
                   class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Portfolio</a>
               </li>
               <li class="group">
-                <a href="#home" class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Contact</a>
+                <a href="#blog" class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Blog</a>
+              </li>
+              <li class="group">
+                <a href="#contact"
+                  class="text-base text-stone-950 py-2 mx-7 flex group-hover:text-yellow-500">Contact</a>
               </li>
             </ul>
           </nav>
@@ -199,7 +203,7 @@
                 standar untuk dokumen yang dirancang untuk
                 ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS)
                 dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.</p>
-              <a href="#"
+              <a href="https://www.w3schools.com/html/"
                 class="font-medium text-sm text-white bg-yellow-500 py-2 px-4 rounded-lg hover:opacity-75">Pelajari
                 disini!</a>
             </div>
@@ -214,7 +218,7 @@
               <p class="font-medium text-base text-slate-500 mb-4">Cascading Style Sheet merupakan aturan untuk mengatur
                 beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan
                 bahasa pemrograman.</p>
-              <a href="#"
+              <a href="https://www.w3schools.com/css/default.asp"
                 class="font-medium text-sm text-white bg-yellow-500 py-2 px-4 rounded-lg hover:opacity-75">Pelajari
                 disini!</a>
             </div>
@@ -225,12 +229,28 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="err img"
               class="w-full">
             <div class="py-8 px-6">
-              <h3 class="block mb-3 font-semibold text-xl text-stone-950 hover:text-yellow-600 truncate">JAVASCRIPT</h3>
+              <h3 class="block mb-3 font-semibold text-xl text-stone-950 hover:text-yellow-600 truncate">JAVASSCRIPT
+              </h3>
               <p class="font-medium text-base text-slate-500 mb-4">JavaScript adalah suatu bahasa pemrograman tingkat
                 tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web
                 populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript
                 dapat disisipkan dalam halaman web menggunakan tag script.</p>
-              <a href="#"
+              <a href="https://www.w3schools.com/js/default.asp"
+                class="font-medium text-sm text-white bg-yellow-500 py-2 px-4 rounded-lg hover:opacity-75">Pelajari
+                disini!</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-slate-300 rounded-xl shadow-xl overflow-hidden mb-10">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="err img"
+              class="w-full">
+            <div class="py-8 px-6">
+              <h3 class="block mb-3 font-semibold text-xl text-stone-950 hover:text-yellow-600 truncate">NodeJS</h3>
+              <p class="font-medium text-base text-slate-500 mb-4">Node.js adalah platform perangkat lunak yang
+                dirancang oleh Ryan Dahl. Node.js adalah runtime untuk lingkungan JavaScript di luar peramban web yang
+                dibangun di atas mesin JavaScript V8. Node.js dapat dijalankan pada Windows, Mac OS X, dan Linux.</p>
+              <a href="https://www.w3schools.com/nodejs/default.asp"
                 class="font-medium text-sm text-white bg-yellow-500 py-2 px-4 rounded-lg hover:opacity-75">Pelajari
                 disini!</a>
             </div>
@@ -241,7 +261,56 @@
   </section>
   <!-- Blog Section End-->
 
+  <!-- Contact Section -->
+  <section id="contact" class="pt-32 pb-32 bg-slate-400">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-bold uppercase text-yellow-600 text-lg mb-2">Contact</h4>
+          <h2 class="font-bold text-stone-950 text-3xl mb-4">Hubungi kami</h2>
+          <p class="font-medium text-md text-slate-500"></p>
+        </div>
+      </div>
+    </div>
 
+    <form action="post">
+      <div class="w-full lg:w-2/3 lg:mx-auto">
+        <div class="w-full px-4 mb-8">
+          <label for="nama" class="text-base font-bold text-yellow-500">Nama</label>
+          <input type="text" id="nama"
+            class="w-full bg-slate-100 text-stone-950 p-3 rounded-md focus:outline-none focus:ring-yellow-600 focus:ring-1 focus:border-yellow-600">
+        </div>
+        <div class="w-full px-4 mb-8">
+          <label for="email" class="text-base font-bold text-yellow-500">Email</label>
+          <input type="text" id="email"
+            class="w-full bg-slate-100 text-stone-950 p-3 rounded-md focus:outline-none focus:ring-yellow-600 focus:ring-1 focus:border-yellow-600">
+        </div>
+        <div class="w-full px-4 mb-8">
+          <label for="message" class="text-base font-bold text-yellow-500">Pesan</label>
+          <textarea type="text" id="message"
+            class="w-full bg-slate-100 text-stone-950 p-3 rounded-md focus:outline-none focus:ring-yellow-600 focus:ring-1 focus:border-yellow-600 h-32">
+        </textarea>
+        </div>
+        <div class="w-full px-4">
+          <button
+            class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full w-full hover:opacity-75 transition duration-300 hover:shadow-lg">Kirim</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- Contact Section End-->
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 pt-24 pb-12">
+    <div class="w-full px-4 mb-12">
+      <img src="/public/img/logo.png" alt="" width="70">
+      <h3>Hubungi kami</h3>
+      <p>Ferdy</p>
+      <p>frdytmvn@gmail.com</p>
+      <p>Soppeng,Sulawesi selatan</p>
+    </div>
+  </footer>
+  <!-- Footer End-->
 
   <script src="/public/script.js"></script>
 </body>

@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title href="/dist/img/logo.png">MYWEBPORTOFOLIO</title>
+  <link rel="icon" href="dist/img/logo.png">
+  <title>MYWEBPORTOFOLIO</title>
   <link rel="stylesheet" href="dist/output.css">
   <link rel="stylesheet" href="dist/style.css">
 </head>
@@ -60,7 +61,7 @@
 
   <!-- hero section -->
   <section id="home" class="pt-36">
-    <div class="container self-center">
+    <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:w-1/2">
           <h1 class="text-base font-semibold text-yellow-600 md:text-xl lg:text-2xl">Halo Semua👋,saya <span
@@ -73,8 +74,8 @@
         </div>
 
         <div class="w-full self-end px-4 lg:w-1/2">
-          <div class=" relative mt-10 lg:mt-0 lg:right-0 animate__animated animate__zoomIn">
-            <img src="dist/img/profil.png" alt="img" class="max-w-full mx-auto" width="761px" height="761">
+          <div class="mt-10 lg:mt-0 lg:right-0 animate__animated animate__zoomIn">
+            <img src="dist/img/profil.png" alt="img" class="max-w-full mx-auto">
           </div>
         </div>
       </div>
@@ -146,8 +147,7 @@
           </div>
 
           <div class="flex flex-wrap justify-center items-center">
-            <img src="dist/img/logo/html-1.svg" alt="" width="50px"
-              class="max-w-[120px] mr-3 mx-4 py-4 lg:mx-6 xl:mx-8">
+            <img src="dist/img/logo/html-1.svg" alt="" width="50px" class="max-w-[120px] mr-3 py-4 lg:mx-6 xl:mx-8">
             <img src="dist/img/logo/css-3.svg" alt="" width="50px" class="max-w-[120px] mr-3 mx-4 py-4 lg:mx-6 xl:mx-8">
             <img src="dist/img/logo/logo-javascript.svg" alt="" width="50px"
               class="max-w-[120px] mr-3 mx-4 py-4 lg:mx-6 xl:mx-8">
@@ -417,23 +417,6 @@
   <!-- Footer End-->
 
   <script src="dist/script.js"></script>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGoPifMcR1cYFL4Xkssvizj6Mt59UUMCayrEvOu4QrSTZuZtgRbzfGr9eVITD63vSJ/exec'
-    const form = document.forms['My-web-portfolio contact form'];
-    const myAlert = document.getElementById('alert');
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          myAlert.classList.toggle('hidden')
-          console.log('succsess!', response)
-          form.reset();
-        })
-        .catch(error => alert(error.message))
-    })
-  </script>
 </body>
 
 </html>

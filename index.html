@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title href="/dist/img/logo.png">MYWEBPORTOFOLIO</title>
   <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="dist/style.css">
 </head>
 
 <body>
@@ -338,21 +339,26 @@
       </div>
     </div>
 
-    <form action="post" name="My-web-portfolio contact form">
+    <div id="alert" class="alert lg:w-2/3 lg:mx-auto hidden">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Terima kasih pesan anda sudah kami terima!
+    </div>
+
+    <form action="" name="My-web-portfolio contact form">
       <div class="w-full lg:w-2/3 lg:mx-auto">
         <div class="w-full px-4 mb-8">
           <label for="nama" class="text-base font-bold text-yellow-500">Nama</label>
-          <input type="text" id="nama" name="nama"
+          <input required type="text" id="nama" name="nama"
             class="w-full bg-slate-100 text-stone-950 p-3 rounded-md focus:outline-none focus:ring-yellow-600 focus:ring-1 focus:border-yellow-600">
         </div>
         <div class="w-full px-4 mb-8">
           <label for="email" class="text-base font-bold text-yellow-500">Email</label>
-          <input type="text" id="email" name="email"
+          <input required type="text" id="email" name="email"
             class="w-full bg-slate-100 text-stone-950 p-3 rounded-md focus:outline-none focus:ring-yellow-600 focus:ring-1 focus:border-yellow-600">
         </div>
         <div class="w-full px-4 mb-8">
           <label for="message" class="text-base font-bold text-yellow-500">Pesan</label>
-          <textarea type="text" id="pesan" name="pesan"
+          <textarea required type="text" id="pesan" name="pesan"
             class="w-full bg-slate-100 text-stone-950 p-3 rounded-md focus:outline-none focus:ring-yellow-600 focus:ring-1 focus:border-yellow-600 h-32">
         </textarea>
         </div>
@@ -411,15 +417,18 @@
   <!-- Footer End-->
 
   <script src="dist/script.js"></script>
+
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxGoPifMcR1cYFL4Xkssvizj6Mt59UUMCayrEvOu4QrSTZuZtgRbzfGr9eVITD63vSJ/exec'
-    const form = document.forms['My-web-portfolio contact form']
+    const form = document.forms['My-web-portfolio contact form'];
+    const myAlert = document.getElementById('alert');
 
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-          alert('Terima kasih pesan anda kami terima!', response)
+          myAlert.classList.toggle('hidden')
+          console.log('succsess!', response)
           form.reset();
         })
         .catch(error => alert(error.message))

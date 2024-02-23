@@ -1,6 +1,5 @@
 .alert {
   padding: 20px;
-  background-color: #4af6ab;
   color: white;
 }
 
@@ -17,4 +16,11 @@
 
 .closebtn:hover {
   color: black;
+}
+
+.succsess {
+  background-color: #4af6ab;
+}
+.danger {
+  background-color: red;
 }

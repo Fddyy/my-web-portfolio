@@ -9,6 +9,7 @@
   <title>MYWEBPORTOFOLIO</title>
   <link rel="stylesheet" href="dist/output.css">
   <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -339,9 +340,8 @@
       </div>
     </div>
 
-    <div id="alert" class="alert lg:w-2/3 lg:mx-auto hidden">
+    <div id="alert" class="alert lg:w-2/3 lg:mx-auto hidden rounded-lg">
       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-      Terima kasih pesan anda sudah kami terima!
     </div>
 
     <form action="" name="My-web-portfolio contact form">
@@ -363,8 +363,9 @@
         </textarea>
         </div>
         <div class="w-full px-4">
-          <button type="submit"
-            class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full w-full hover:opacity-75 transition duration-300 hover:shadow-lg">Kirim</button>
+          <button id="btn" type="submit"
+            class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full w-full hover:opacity-75 transition duration-300 hover:shadow-lg">
+            Kirim</button>
         </div>
       </div>
     </form>

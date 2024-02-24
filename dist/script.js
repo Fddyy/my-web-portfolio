@@ -3,7 +3,7 @@ const hb = document.querySelector('#hamburger');
 const navmenu = document.querySelector('#nav-menu');
 
 hb.addEventListener('click', function() {
-    hb.classList.toggle('hamburger-aktif');
+    hb.classList.toggle('hamburger-aktif')
     navmenu.classList.toggle('hidden')
 });
 
@@ -12,9 +12,10 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxGoPifMcR1cYFL4Xkssv
     const myAlert = document.getElementById('alert');
     const btn = document.getElementById('btn');
     
+    // Button load
     btn.addEventListener('click', function() {
-      btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i>Loading'
-    })
+      btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i>Mengirim!'
+    });
 
     form.addEventListener('submit', e => {
       e.preventDefault()
@@ -22,7 +23,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxGoPifMcR1cYFL4Xkssv
         .then(response => {
           myAlert.classList.toggle('hidden');
           myAlert.classList.toggle('succsess');
-          myAlert.innerHTML += 'Terima kasih pesan anda sudah kami terima!';
+          myAlert.innerHTML += 'Terima kasih, pesan anda sudah kami terima!';
           btn.innerHTML = 'Kirim';
           console.log('succsess!', response);
           form.reset();
@@ -30,8 +31,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxGoPifMcR1cYFL4Xkssv
         .catch(error => {
           myAlert.classList.toggle('hidden');
           myAlert.classList.toggle('danger');
-          myAlert.innerHTML += 'Terjadi kesalahan, gagal mengirim pesan';
+          myAlert.innerHTML += 'Terjadi kesalahan, gagal mengirim pesan⚠️';
           btn.innerHTML = 'Kirim';
-          alert(error.message)
+          alert(error.message);
+          form.reset();
         });
     });
